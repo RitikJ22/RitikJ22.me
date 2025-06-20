@@ -68,7 +68,7 @@ const Intro = () => {
         variants={childVariant}
         className="text-zinc-700 dark:text-zinc-400 mt-8"
       >
-        I&apos;m a frontend engineer passionate about building beautiful and
+        I&apos;m a Frontend engineer passionate about building beautiful and
         functional user experiences. With expertise in Next.js, React and
         TypeScript. I bring ideas to life, from sleek interfaces to decentralized
         applications in the Web3 space. I thrive on turning complex problems into
