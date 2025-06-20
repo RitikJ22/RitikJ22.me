@@ -72,6 +72,8 @@ const Footer = () => {
             <Link
               key={l.name}
               href={l.link}
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-gray-500 hover:text-gray-600"
             >
               <li>{l.name}</li>
@@ -83,6 +85,8 @@ const Footer = () => {
             <Link
               key={l.name}
               href={l.link}
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-gray-500 hover:text-gray-600"
             >
               <li>{l.name}</li>
