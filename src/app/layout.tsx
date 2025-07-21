@@ -6,6 +6,7 @@ import Navigation from "@/components/Navigation";
 import DarkModeToggle from "@/components/DarkModeToggle";
 import { ThemeContextProvider } from "@/contexts/ThemeContextProvider";
 import Footer from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -45,6 +46,7 @@ export default function RootLayout({
             <Footer />
           </div>
         </ThemeContextProvider>
+        <Analytics />
       </body>
     </html>
   );
