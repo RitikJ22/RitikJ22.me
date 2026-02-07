@@ -1,0 +1,13 @@
+{
+  "hero_title": "Hi, I'm Ritik",
+  "hero_description": "Full-stack developer building [products](/projects) that look great and scale well.",
+  "about_me_paragraph_1": "I'm a full-stack developer focused on crafting elegant user experiences and reliable backend systems. With expertise in [Next.js](https://nextjs.org), [React](https://react.dev), [TypeScript](https://www.typescriptlang.org/), and backend services, I ship end-to-end features from idea to production.",
+  "about_me_paragraph_2": "I enjoy solving complex problems across UI, APIs, and infrastructure, and I care deeply about performance, DX, and product polish. I'm also an AI engineer, building in the AI and DeFi space with a strong focus on real-world impact.",
+  "contact_description": "Want to build something together? Hit me up on [Email](mailto:ritikjaiswal148@gmail.com) or [X](https://x.com/RitikJa62967785). Let's create something that doesn't end up in the GitHub graveyard.",
+  "signature_name": "Ritik",
+  "meta_title": "Ritik Jaiswal",
+  "meta_description": "Full-stack developer specializing in UI/UX, AI, and DeFi. Building elegant products with Next.js, React, TypeScript, and scalable backends.",
+  "job_title": "Full-Stack Developer",
+  "company": "Freelance",
+  "skills": ["Next.js", "React", "TypeScript", "Node.js", "Web3", "DeFi", "UI/UX"]
+}

@@ -2,11 +2,24 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-import Navigation from "@/components/Navigation";
-import DarkModeToggle from "@/components/DarkModeToggle";
-import { ThemeContextProvider } from "@/contexts/ThemeContextProvider";
-import Footer from "@/components/Footer";
+import ClientLayout from "./ClientLayout";
 import { Analytics } from "@vercel/analytics/next";
+
+const fallbackStorage = {
+  getItem: () => null,
+  setItem: () => undefined,
+  removeItem: () => undefined,
+  clear: () => undefined,
+};
+
+if (typeof globalThis !== "undefined") {
+  const storage = (globalThis as { localStorage?: unknown }).localStorage as
+    | { getItem?: unknown }
+    | undefined;
+  if (storage && typeof storage.getItem !== "function") {
+    (globalThis as { localStorage?: unknown }).localStorage = fallbackStorage;
+  }
+}
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,9 +32,32 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ritik Jaiswal - Frontend Engineer",
+  title: {
+    default: "Ritik Jaiswal - Frontend Engineer",
+    template: "%s | Ritik Jaiswal",
+  },
   description:
     "Frontend Engineer specializing in UI/UX and DeFi. Building beautiful and functional user experiences with Next.js, React, and TypeScript.",
+  metadataBase: new URL("https://ritikj22.me"),
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://ritikj22.me",
+    title: "Ritik Jaiswal - Frontend Engineer",
+    description:
+      "Frontend Engineer specializing in UI/UX and DeFi. Building beautiful and functional user experiences.",
+    siteName: "Ritik Jaiswal",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ritik Jaiswal - Frontend Engineer",
+    description:
+      "Frontend Engineer specializing in UI/UX and DeFi.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
@@ -32,20 +68,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased transition-colors duration-200 relative`}
+        className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
       >
-        <ThemeContextProvider>
-          <div className="backdrop-blur-md sticky top-0 transition-colors duration-200 z-50">
-            <div className="flex justify-between items-center max-w-4xl mx-auto">
-              <DarkModeToggle />
-              <Navigation />
-            </div>
-          </div>
-          <div className="max-w-2xl mx-auto">{children}</div>
-          <div className="max-w-2xl mx-auto">
-            <Footer />
-          </div>
-        </ThemeContextProvider>
+        <ClientLayout>{children}</ClientLayout>
         <Analytics />
       </body>
     </html>
