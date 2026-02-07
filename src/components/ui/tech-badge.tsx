@@ -84,36 +84,6 @@ const techNames: Record<TechType, string> = {
     defi: 'DeFi'
 }
 
-// Active colors for each tech (shown on group hover)
-const techColors: Record<TechType, string> = {
-    typescript: 'text-blue-500',
-    javascript: 'text-yellow-500',
-    react: 'text-cyan-400',
-    next: 'text-foreground',
-    node: 'text-green-500',
-    vue: 'text-emerald-500',
-    rust: 'text-orange-500',
-    python: 'text-blue-400',
-    aws: 'text-amber-500',
-    graphql: 'text-pink-500',
-    solidity: 'text-gray-500',
-    web3: 'text-purple-500',
-    ai: 'text-violet-500',
-    llm: 'text-emerald-400',
-    tailwind: 'text-cyan-400',
-    framer: 'text-pink-500',
-    vercel: 'text-foreground',
-    postgres: 'text-blue-500',
-    prisma: 'text-teal-500',
-    mongodb: 'text-green-500',
-    redis: 'text-red-500',
-    discord: 'text-indigo-500',
-    npm: 'text-red-500',
-    github: 'text-foreground',
-    ethereum: 'text-purple-500',
-    defi: 'text-purple-500'
-}
-
 // Group-hover colors (for parent card hover activation)
 const techGroupHoverColors: Record<TechType, string> = {
     typescript: 'group-hover:text-blue-500',
