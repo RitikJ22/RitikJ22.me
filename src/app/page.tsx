@@ -69,7 +69,7 @@ export default function Home() {
                         </div>
                         <div className="overflow-hidden rounded-xl w-24 h-24 md:w-28 md:h-28 shadow-lg border border-border flex-shrink-0">
                             <Image
-                                src="/Anime%20Hypio%20Kids.png"
+                                src="/Anime%20Hypio%20Kids.webp"
                                 height={112}
                                 width={112}
                                 alt="Ritik Jaiswal"
