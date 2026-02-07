@@ -1,0 +1,76 @@
+[
+  {
+    "id": "mercor-2025",
+    "title": "Mercor",
+    "period": "2025",
+    "description": "An AI talent marketplace that connects specialized experts with AI labs and enterprises to advance AI development. Building here for the past 6 months.",
+    "link": "https://work.mercor.com",
+    "type": "AI",
+    "technologies": ["next", "typescript", "tailwind", "ai"],
+    "featured": true,
+    "order": 0,
+    "published": true
+  },
+  {
+    "id": "funnel-2025",
+    "title": "Funnel",
+    "period": "2025",
+    "description": "The unified interface for listing, deploying, and trading every asset across HyperCore & HyperEVM.",
+    "link": "https://funnel.markets/",
+    "type": "DeFi",
+    "technologies": ["next", "typescript", "tailwind", "web3", "defi"],
+    "featured": true,
+    "order": 1,
+    "published": true
+  },
+  {
+    "id": "showdown-2024",
+    "title": "Showdown",
+    "period": "2024",
+    "description": "Play, compete, and earn instantly on your favorite games, bringing the on-chain gaming revolution to Monad. Join tournaments and compete globally.",
+    "link": "https://showdown.win/",
+    "twitter": "https://x.com/showdown_gg",
+    "type": "DeFi",
+    "technologies": ["next", "typescript", "tailwind", "graphql", "framer"],
+    "featured": true,
+    "order": 2,
+    "published": true
+  },
+  {
+    "id": "prophet-2024",
+    "title": "Prophet",
+    "period": "2024",
+    "description": "A platform that gamifies options trading on Hyperliquid EVM, allowing users to win exponentially by predicting the correct price range of an asset.",
+    "link": "https://www.prophet.win/",
+    "twitter": "https://x.com/prophet_hl",
+    "type": "DeFi",
+    "technologies": ["next", "typescript", "tailwind", "graphql", "framer"],
+    "featured": true,
+    "order": 3,
+    "published": true
+  },
+  {
+    "id": "noon-ai-2023",
+    "title": "Noon.AI",
+    "period": "2023",
+    "description": "An AI platform for recruiting world-class talent, simplifying the process of finding perfect candidates for difficult roles.",
+    "link": "https://www.noon.ai/",
+    "type": "AI",
+    "technologies": ["next", "typescript", "tailwind", "ai"],
+    "featured": true,
+    "order": 4,
+    "published": true
+  },
+  {
+    "id": "canto-ecosystem-2023",
+    "title": "Canto Ecosystem",
+    "period": "2023",
+    "description": "Contributed to Free Public Infrastructure including Canto Pools (Liquidity), Canto Analytics, and the Liquidity Coordinator.",
+    "link": "https://canto.io/",
+    "type": "DeFi",
+    "technologies": ["next", "typescript", "tailwind", "web3", "defi"],
+    "featured": false,
+    "order": 5,
+    "published": true
+  }
+]

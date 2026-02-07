@@ -1,0 +1,63 @@
+[
+  {
+    "id": "mercor-2025",
+    "company": "Mercor",
+    "position": "Software Engineer II",
+    "period": "July 2025 - Present",
+    "location": "Remote",
+    "workType": "remote",
+    "description": [
+      "Expanded scope to Full Stack SDE 2, owning the Referral Programme, contributing to the Payment Contracts team, and spearheading system optimization",
+      "Engineered backend services using Python, Golang, and Kafka consumers for real-time data processing while integrating OpenAI SDK for AI features"
+    ],
+    "current": true,
+    "order": 0,
+    "published": true,
+    "link": "https://work.mercor.com"
+  },
+  {
+    "id": "accelerate-labs-2025",
+    "company": "Accelerate Labs",
+    "position": "Senior Frontend Engineer",
+    "period": "Feb 2025 - July 2025",
+    "location": "Remote, Dubai",
+    "workType": "remote",
+    "description": [
+      "Leading frontend development for innovative products on the HyperEVM blockchain"
+    ],
+    "current": false,
+    "order": 1,
+    "published": true,
+    "link": null
+  },
+  {
+    "id": "neobase-2024",
+    "company": "Neobase",
+    "position": "Frontend Engineer",
+    "period": "Jan 2024 - Jan 2025",
+    "location": "Remote, Dubai",
+    "workType": "remote",
+    "description": [
+      "Led the frontend integration of secure blockchain functionalities using Wagmi and collaborated with UI/UX designers to translate prototypes into responsive web interfaces"
+    ],
+    "current": false,
+    "order": 2,
+    "published": true,
+    "link": null
+  },
+  {
+    "id": "tcs-2021",
+    "company": "Tata Consultancy Services",
+    "position": "React.js Developer",
+    "period": "Jun 2021 - Jan 2024",
+    "location": "Noida, India",
+    "workType": "onsite",
+    "description": [
+      "Delivered over 20+ responsive web applications by collaborating with designers and backend developers using React, Next.js, and TypeScript"
+    ],
+    "current": false,
+    "order": 3,
+    "published": true,
+    "link": null
+  }
+]
