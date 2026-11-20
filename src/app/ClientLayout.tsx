@@ -41,10 +41,17 @@ function Navigation() {
       : NAV_ITEMS;
 
   useEffect(() => {
+    const savedTheme = window.localStorage.getItem("theme");
     const prefersDark = window.matchMedia?.(
       "(prefers-color-scheme: dark)",
     ).matches;
-    setTheme(prefersDark ? "dark" : "light");
+    setTheme(
+      savedTheme === "dark" || savedTheme === "light"
+        ? savedTheme
+        : prefersDark
+          ? "dark"
+          : "light",
+    );
     setMounted(true);
     const handleScroll = () => {
       const isScrolled = window.scrollY > 50;
@@ -70,11 +77,12 @@ function Navigation() {
       window.removeEventListener("scroll", handleScroll);
       if (scrollTimeoutRef.current) clearTimeout(scrollTimeoutRef.current);
     };
-  }, [showScrollBtn]);
+  }, []);
 
   useEffect(() => {
     if (!mounted) return;
     document.documentElement.classList.toggle("dark", theme === "dark");
+    window.localStorage.setItem("theme", theme);
   }, [theme, mounted]);
 
   const toggleTheme = () => {
